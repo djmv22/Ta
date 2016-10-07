@@ -190,18 +190,7 @@ public class Principal extends javax.swing.JFrame {
             Helper.mensaje(this, "El número de columnas solo puede entre 5 y 15", 3);
             txtNumeroDeColumnas.requestFocusInWindow();
             txtNumeroDeColumnas.selectAll();
-        } /*else if (Integer.parseInt(txtNumeroDeFilas.getText().trim())%2==0 || Integer.parseInt(txtNumeroDeColumnas.getText().trim())%2==0){
-            Helper.mensaje(this, "El número de filas y columnas debe ser impar", 3);
-            txtNumeroDeFilas.requestFocusInWindow();
-            txtNumeroDeFilas.selectAll();
-            txtNumeroDeColumnas.setText("");
-        }
-        else if(Integer.parseInt(txtNumeroDeFilas.getText().trim())!=Integer.parseInt(txtNumeroDeColumnas.getText().trim())){
-            Helper.mensaje(this, "El número de filas y columnas deben ser la misma", 3);
-            txtNumeroDeFilas.requestFocusInWindow();
-            txtNumeroDeFilas.selectAll();
-            txtNumeroDeColumnas.setText("");
-        }*/ else {
+        } else {
             try {
 
                 nf = Integer.parseInt(txtNumeroDeFilas.getText());
